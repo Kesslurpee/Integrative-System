@@ -22,34 +22,35 @@ namespace ComputerizedVeterinaryAppointment
         {
             InitializeComponent();
             LoadPasyente();
+            LoadAppointment();
             
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            int height = Screen.PrimaryScreen.Bounds.Height;
-            int width = Screen.PrimaryScreen.Bounds.Width;  
-            this.Width = width; 
-            this.Height = height-40;
-            Top = 0;
-            Left = 0;
+            
         }
         void LoadPasyente()
         {
             connection.Open();
-            int i = 0;
-            command = new SqlCommand("select * from patient", connection);
+            
+            command = new SqlCommand("select count(*) from patient where patient_appointment='appointment'", connection);
             reader = command.ExecuteReader();
-            while (reader.Read()) 
-            {
-                i++;
-                
-            }
-            PatientNo.Text = i.ToString();
+            PatientNo.Text = command.ExecuteScalar().ToString();
             connection.Close();
 
         }
-        
+       public void LoadAppointment()
+        {
+            connection.Open();
+
+            command = new SqlCommand("select count(*) from patient", connection);
+            reader = command.ExecuteReader();
+            AppointmentNo.Text = command.ExecuteScalar().ToString();
+            connection.Close();
+
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -89,6 +90,7 @@ namespace ComputerizedVeterinaryAppointment
             DateTime date = DateTime.Now;
             DATE.Text = date.ToString();
             LoadPasyente();
+            LoadAppointment();
         }
     }
 }

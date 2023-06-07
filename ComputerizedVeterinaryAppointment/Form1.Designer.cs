@@ -46,7 +46,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.MainPanel = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.AppointmentNo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -267,23 +267,23 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.AppointmentNo);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(579, 19);
+            this.panel6.Location = new System.Drawing.Point(147, 168);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(252, 125);
             this.panel6.TabIndex = 9;
             // 
-            // label9
+            // AppointmentNo
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(202, 81);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 24);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "00";
+            this.AppointmentNo.AutoSize = true;
+            this.AppointmentNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AppointmentNo.ForeColor = System.Drawing.Color.White;
+            this.AppointmentNo.Location = new System.Drawing.Point(202, 81);
+            this.AppointmentNo.Name = "AppointmentNo";
+            this.AppointmentNo.Size = new System.Drawing.Size(30, 24);
+            this.AppointmentNo.TabIndex = 12;
+            this.AppointmentNo.Text = "00";
             // 
             // label6
             // 
@@ -370,7 +370,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Form1";
@@ -413,7 +413,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label AppointmentNo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label8;
