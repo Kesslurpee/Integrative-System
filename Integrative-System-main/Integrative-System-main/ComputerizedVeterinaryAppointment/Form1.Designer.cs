@@ -64,7 +64,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -87,17 +87,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("PosterBodoni BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Unispace", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(202, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(513, 22);
+            this.label3.Size = new System.Drawing.Size(430, 23);
             this.label3.TabIndex = 9;
             this.label3.Text = "COMPUTERIZED VETERINARY APPOINTMENT";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -108,7 +109,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button6.BackColor = System.Drawing.Color.SteelBlue;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
@@ -131,14 +132,13 @@
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(182, 205);
+            this.panel3.Size = new System.Drawing.Size(182, 153);
             this.panel3.TabIndex = 0;
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button5.BackColor = System.Drawing.Color.SteelBlue;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
@@ -151,7 +151,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button4.BackColor = System.Drawing.Color.SteelBlue;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Dock = System.Windows.Forms.DockStyle.Top;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
@@ -167,7 +167,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
@@ -183,7 +183,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
@@ -199,7 +199,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel7.BackColor = System.Drawing.Color.SteelBlue;
             this.panel7.Controls.Add(this.DATE);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(182, 565);
@@ -211,11 +211,11 @@
             // 
             this.DATE.AutoSize = true;
             this.DATE.BackColor = System.Drawing.Color.Transparent;
-            this.DATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DATE.Font = new System.Drawing.Font("Unispace", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DATE.ForeColor = System.Drawing.Color.White;
             this.DATE.Location = new System.Drawing.Point(6, 5);
             this.DATE.Name = "DATE";
-            this.DATE.Size = new System.Drawing.Size(147, 24);
+            this.DATE.Size = new System.Drawing.Size(142, 23);
             this.DATE.TabIndex = 9;
             this.DATE.Text = "APPOINTMENT";
             // 
@@ -227,8 +227,8 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.Black;
-            this.MainPanel.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.vet;
-            this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.MainPanel.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.pets;
+            this.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MainPanel.Controls.Add(this.label3);
             this.MainPanel.Controls.Add(this.panel6);
@@ -242,7 +242,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel6.BackColor = System.Drawing.Color.SteelBlue;
             this.panel6.Controls.Add(this.AppointmentNo);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(9, 192);
@@ -264,17 +264,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Unispace", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(245, 20);
+            this.label6.Size = new System.Drawing.Size(229, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "NUMBER OF APPOINTMENTS";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(685, 37);
@@ -296,17 +296,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Unispace", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 24);
+            this.label5.Size = new System.Drawing.Size(214, 23);
             this.label5.TabIndex = 10;
             this.label5.Text = "NUMBER OF DOCTORS";
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel8.BackColor = System.Drawing.Color.SteelBlue;
             this.panel8.Controls.Add(this.PatientNo);
             this.panel8.Controls.Add(this.label4);
             this.panel8.ForeColor = System.Drawing.Color.White;
@@ -329,7 +329,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Unispace", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
@@ -341,12 +341,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.pets;
             this.ClientSize = new System.Drawing.Size(1132, 603);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

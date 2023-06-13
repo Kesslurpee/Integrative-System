@@ -38,6 +38,14 @@
             this.Owner = new System.Windows.Forms.Label();
             this.PasyentePic = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.time = new System.Windows.Forms.DateTimePicker();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.Distemper = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Parvo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Leptospirosis = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.Name = new System.Windows.Forms.Label();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -134,7 +142,15 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.time);
+            this.panel2.Controls.Add(this.date);
+            this.panel2.Controls.Add(this.Distemper);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.Parvo);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.Leptospirosis);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
@@ -146,22 +162,89 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(251, 612);
+            this.panel2.Size = new System.Drawing.Size(251, 713);
             this.panel2.TabIndex = 6;
+            // 
+            // time
+            // 
+            this.time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.time.Location = new System.Drawing.Point(3, 684);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(242, 20);
+            this.time.TabIndex = 31;
+            // 
+            // date
+            // 
+            this.date.Location = new System.Drawing.Point(3, 658);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(242, 20);
+            this.date.TabIndex = 30;
+            // 
+            // Distemper
+            // 
+            this.Distemper.Location = new System.Drawing.Point(4, 632);
+            this.Distemper.Name = "Distemper";
+            this.Distemper.Size = new System.Drawing.Size(100, 20);
+            this.Distemper.TabIndex = 29;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(4, 616);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "FINDINGS";
+            // 
+            // Parvo
+            // 
+            this.Parvo.Location = new System.Drawing.Point(3, 582);
+            this.Parvo.Name = "Parvo";
+            this.Parvo.Size = new System.Drawing.Size(100, 20);
+            this.Parvo.TabIndex = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 566);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "FINDINGS:";
+            // 
+            // Leptospirosis
+            // 
+            this.Leptospirosis.Location = new System.Drawing.Point(3, 528);
+            this.Leptospirosis.Name = "Leptospirosis";
+            this.Leptospirosis.Size = new System.Drawing.Size(100, 20);
+            this.Leptospirosis.TabIndex = 25;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(3, 512);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "FINDINGS:";
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 221);
+            this.button3.Location = new System.Drawing.Point(3, 221);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(233, 28);
+            this.button3.Size = new System.Drawing.Size(245, 28);
             this.button3.TabIndex = 22;
-            this.button3.Text = "Create New Patient";
+            this.button3.Text = "DIAGNOSE PATIENT";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Name
             // 
@@ -267,7 +350,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -306,18 +389,19 @@
             this.PatientGrid.ReadOnly = true;
             this.PatientGrid.RowHeadersVisible = false;
             this.PatientGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PatientGrid.Size = new System.Drawing.Size(936, 640);
+            this.PatientGrid.Size = new System.Drawing.Size(936, 741);
             this.PatientGrid.TabIndex = 5;
             // 
             // DiagnoseGrid
             // 
             this.DiagnoseGrid.AllowUserToAddRows = false;
             this.DiagnoseGrid.AllowUserToDeleteRows = false;
+            this.DiagnoseGrid.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DiagnoseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -339,7 +423,7 @@
             this.DiagnoseGrid.ReadOnly = true;
             this.DiagnoseGrid.RowHeadersVisible = false;
             this.DiagnoseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DiagnoseGrid.Size = new System.Drawing.Size(685, 612);
+            this.DiagnoseGrid.Size = new System.Drawing.Size(685, 713);
             this.DiagnoseGrid.TabIndex = 7;
             this.DiagnoseGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DiagnoseGrid_CellClick);
             // 
@@ -421,12 +505,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 640);
+            this.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.pets;
+            this.ClientSize = new System.Drawing.Size(936, 741);
             this.Controls.Add(this.DiagnoseGrid);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PatientGrid);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             
             this.Text = "Diagnose";
             ((System.ComponentModel.ISupportInitialize)(this.PasyentePic)).EndInit();
@@ -475,5 +560,13 @@
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox Distemper;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox Parvo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Leptospirosis;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker time;
+        private System.Windows.Forms.DateTimePicker date;
     }
 }

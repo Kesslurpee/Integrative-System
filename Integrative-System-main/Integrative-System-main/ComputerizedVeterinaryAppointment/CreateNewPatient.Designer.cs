@@ -53,53 +53,61 @@
             // patient_nameLabel
             // 
             patient_nameLabel.AutoSize = true;
+            patient_nameLabel.BackColor = System.Drawing.Color.Transparent;
+            patient_nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             patient_nameLabel.ForeColor = System.Drawing.Color.White;
             patient_nameLabel.Location = new System.Drawing.Point(12, 52);
             patient_nameLabel.Name = "patient_nameLabel";
-            patient_nameLabel.Size = new System.Drawing.Size(72, 13);
+            patient_nameLabel.Size = new System.Drawing.Size(101, 16);
             patient_nameLabel.TabIndex = 13;
             patient_nameLabel.Text = "Patient name:";
             // 
             // patient_ownerLabel
             // 
             patient_ownerLabel.AutoSize = true;
+            patient_ownerLabel.BackColor = System.Drawing.Color.Transparent;
+            patient_ownerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             patient_ownerLabel.ForeColor = System.Drawing.Color.White;
             patient_ownerLabel.Location = new System.Drawing.Point(12, 78);
             patient_ownerLabel.Name = "patient_ownerLabel";
-            patient_ownerLabel.Size = new System.Drawing.Size(75, 13);
+            patient_ownerLabel.Size = new System.Drawing.Size(104, 16);
             patient_ownerLabel.TabIndex = 15;
             patient_ownerLabel.Text = "Patient owner:";
             // 
             // patient_PhoneLabel
             // 
             patient_PhoneLabel.AutoSize = true;
+            patient_PhoneLabel.BackColor = System.Drawing.Color.Transparent;
+            patient_PhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             patient_PhoneLabel.ForeColor = System.Drawing.Color.White;
             patient_PhoneLabel.Location = new System.Drawing.Point(12, 104);
             patient_PhoneLabel.Name = "patient_PhoneLabel";
-            patient_PhoneLabel.Size = new System.Drawing.Size(77, 13);
+            patient_PhoneLabel.Size = new System.Drawing.Size(107, 16);
             patient_PhoneLabel.TabIndex = 17;
             patient_PhoneLabel.Text = "Patient Phone:";
             // 
             // patient_imageLabel
             // 
             patient_imageLabel.AutoSize = true;
+            patient_imageLabel.BackColor = System.Drawing.Color.Transparent;
+            patient_imageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             patient_imageLabel.ForeColor = System.Drawing.Color.White;
-            patient_imageLabel.Location = new System.Drawing.Point(12, 197);
+            patient_imageLabel.Location = new System.Drawing.Point(13, 124);
             patient_imageLabel.Name = "patient_imageLabel";
-            patient_imageLabel.Size = new System.Drawing.Size(74, 13);
+            patient_imageLabel.Size = new System.Drawing.Size(106, 16);
             patient_imageLabel.TabIndex = 19;
             patient_imageLabel.Text = "Patient image:";
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(167, 417);
+            this.button3.Location = new System.Drawing.Point(160, 343);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 38);
+            this.button3.Size = new System.Drawing.Size(193, 38);
             this.button3.TabIndex = 21;
             this.button3.Text = "Browse Image";
             this.button3.UseVisualStyleBackColor = false;
@@ -128,24 +136,26 @@
             // 
             // PatientPic
             // 
+            this.PatientPic.BackColor = System.Drawing.Color.Transparent;
             this.PatientPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PatientPic.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PatientPic.Location = new System.Drawing.Point(121, 197);
+            this.PatientPic.Location = new System.Drawing.Point(121, 123);
             this.PatientPic.Name = "PatientPic";
             this.PatientPic.Size = new System.Drawing.Size(269, 214);
             this.PatientPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PatientPic.TabIndex = 20;
             this.PatientPic.TabStop = false;
+            this.PatientPic.Click += new System.EventHandler(this.PatientPic_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.AddPatient);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(560, 35);
+            this.panel1.Size = new System.Drawing.Size(464, 35);
             this.panel1.TabIndex = 22;
             // 
             // AddPatient
@@ -163,7 +173,7 @@
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(522, 0);
+            this.button1.Location = new System.Drawing.Point(426, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(38, 35);
             this.button1.TabIndex = 0;
@@ -173,12 +183,12 @@
             // 
             // Add
             // 
-            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Add.BackColor = System.Drawing.Color.SteelBlue;
             this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.ForeColor = System.Drawing.Color.White;
-            this.Add.Location = new System.Drawing.Point(60, 461);
+            this.Add.Location = new System.Drawing.Point(51, 387);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(179, 38);
             this.Add.TabIndex = 23;
@@ -188,12 +198,12 @@
             // 
             // Update
             // 
-            this.Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Update.BackColor = System.Drawing.Color.SteelBlue;
             this.Update.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Update.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Update.ForeColor = System.Drawing.Color.White;
-            this.Update.Location = new System.Drawing.Point(270, 461);
+            this.Update.Location = new System.Drawing.Point(256, 387);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(179, 38);
             this.Update.TabIndex = 24;
@@ -206,7 +216,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(560, 536);
+            this.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.pets;
+            this.ClientSize = new System.Drawing.Size(464, 438);
             this.Controls.Add(this.Update);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.panel1);
@@ -219,7 +230,7 @@
             this.Controls.Add(this.PatientPhone);
             this.Controls.Add(patient_imageLabel);
             this.Controls.Add(this.PatientPic);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CreateNewPatient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateNewPatient";

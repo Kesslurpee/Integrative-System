@@ -63,9 +63,29 @@ namespace ComputerizedVeterinaryAppointment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pets {
+            get {
+                object obj = ResourceManager.GetObject("pets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vet {
             get {
                 object obj = ResourceManager.GetObject("vet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vet1 {
+            get {
+                object obj = ResourceManager.GetObject("vet1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

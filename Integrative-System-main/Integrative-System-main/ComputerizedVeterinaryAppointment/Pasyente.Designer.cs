@@ -59,7 +59,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.pets;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button1);
@@ -72,7 +73,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.BackColor = System.Drawing.Color.SteelBlue;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -113,12 +114,13 @@
             // 
             this.PatientGrid.AllowUserToAddRows = false;
             this.PatientGrid.AllowUserToDeleteRows = false;
+            this.PatientGrid.BackgroundColor = System.Drawing.Color.SteelBlue;
             this.PatientGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.PatientGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -216,6 +218,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackgroundImage = global::ComputerizedVeterinaryAppointment.Properties.Resources.pets;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
@@ -233,6 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(4, 362);
             this.label4.Name = "label4";
@@ -244,6 +248,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(4, 306);
             this.label2.Name = "label2";
@@ -255,6 +260,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 237);
             this.label1.Name = "label1";
@@ -266,6 +272,7 @@
             // Phone
             // 
             this.Phone.AutoSize = true;
+            this.Phone.BackColor = System.Drawing.Color.Transparent;
             this.Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Phone.ForeColor = System.Drawing.Color.White;
             this.Phone.Location = new System.Drawing.Point(4, 375);
@@ -278,6 +285,7 @@
             // Owner
             // 
             this.Owner.AutoSize = true;
+            this.Owner.BackColor = System.Drawing.Color.Transparent;
             this.Owner.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Owner.ForeColor = System.Drawing.Color.White;
             this.Owner.Location = new System.Drawing.Point(4, 319);
@@ -290,6 +298,7 @@
             // Name
             // 
             this.Name.AutoSize = true;
+            this.Name.BackColor = System.Drawing.Color.Transparent;
             this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name.ForeColor = System.Drawing.Color.White;
             this.Name.Location = new System.Drawing.Point(4, 250);
@@ -301,6 +310,7 @@
             // 
             // PasyentePic
             // 
+            this.PasyentePic.BackColor = System.Drawing.Color.Transparent;
             this.PasyentePic.Location = new System.Drawing.Point(3, 6);
             this.PasyentePic.Name = "PasyentePic";
             this.PasyentePic.Size = new System.Drawing.Size(185, 209);
@@ -318,7 +328,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            
+           
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pasyente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

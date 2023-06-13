@@ -48,30 +48,35 @@ namespace ComputerizedVeterinaryAppointment
             connect.Open();
             command = new SqlCommand("insert into patient (Patient_name, Patient_owner, Patient_phone, Patient_image) values (@Patient_name,@Patient_owner,@Patient_phone,@Patient_image)", connect);
             MemoryStream memory = new MemoryStream();
-            PatientPic.Image.Save(memory, PatientPic.Image.RawFormat);
-            byte[] img = memory.ToArray();
-            command.Parameters.AddWithValue("@Patient_name", PatientName.Text);
-            command.Parameters.AddWithValue("@Patient_owner", PatientOwner.Text);
-            command.Parameters.AddWithValue("@Patient_phone", PatientPhone.Text);
-            command.Parameters.AddWithValue("@Patient_image",img);
-            command.ExecuteNonQuery();
-            connect.Close();
-
-            foreach (Control ctrl in this.Controls)
+            if (PatientPic.Image != null)
             {
-                if (ctrl is TextBox)
-                {
-                    ctrl.Text = "";
-                }
-            }
-            
-            PatientPic.Image = new PictureBox().Image;
-            Form1 form = new Form1();
-            form.LoadPasyente();
 
-            
-            
-            MessageBox.Show("Record has been saved successfully!");
+
+                PatientPic.Image.Save(memory, PatientPic.Image.RawFormat);
+                byte[] img = memory.ToArray();
+                command.Parameters.AddWithValue("@Patient_name", PatientName.Text);
+                command.Parameters.AddWithValue("@Patient_owner", PatientOwner.Text);
+                command.Parameters.AddWithValue("@Patient_phone", PatientPhone.Text);
+                command.Parameters.AddWithValue("@Patient_image", img);
+                command.ExecuteNonQuery();
+                connect.Close();
+
+                foreach (Control ctrl in this.Controls)
+                {
+                    if (ctrl is TextBox)
+                    {
+                        ctrl.Text = "";
+                    }
+                }
+
+                PatientPic.Image = new PictureBox().Image;
+                Form1 form = new Form1();
+                form.LoadPasyente();
+
+
+
+                MessageBox.Show("Record has been saved successfully!");
+            }
         }
 
         private void Update_Click(object sender, EventArgs e)
@@ -101,6 +106,11 @@ namespace ComputerizedVeterinaryAppointment
 
             MessageBox.Show("Record has been updated successfully!");
             this.Dispose();
+        }
+
+        private void PatientPic_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
